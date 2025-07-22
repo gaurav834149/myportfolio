@@ -10,6 +10,11 @@ function showSection(sectionId) {
 
     // Scroll to the section smoothly
     document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+
+    // Close the mobile menu after selecting a link
+    if (window.innerWidth <= 768) {
+        document.querySelector('.main-nav').classList.remove('active');
+    }
 }
 
 document.querySelector('.mobile-menu-btn').addEventListener('click', function () {
