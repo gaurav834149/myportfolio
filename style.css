@@ -1,0 +1,169 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+a {
+    color: #00bcd4;
+    text-decoration: none;
+    transition: color 0.3s, border-bottom 0.3s;
+    /* Smooth transition for color and border */
+}
+
+a:hover {
+    color: #ffffff;
+    /* Change text color on hover */
+    border-bottom: 2px solid #00bcd4;
+    /* Add underline effect on hover */
+}
+
+/* Header Styles */
+.header-content {
+    background-color: #1e1e1e;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name-title {
+    font-size: 2em;
+}
+
+.mobile-menu-btn {
+    display: none;
+}
+
+/* Navigation Styles */
+.main-nav {
+    display: flex;
+}
+
+.nav-link {
+    margin: 0 15px;
+    font-size: 1.1em;
+    padding: 5px 0;
+    /* Add some padding for better click area */
+}
+
+.nav-link.active {
+    border-bottom: 2px solid #00bcd4;
+    /* Active link underline */
+}
+
+/* Home Section Styles */
+.home-content {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.profile-image-circle {
+    margin: 20px auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.circle-frame {
+    width: 100%;
+    height: auto;
+}
+
+/* Section Styles */
+section {
+    padding: 40px 20px;
+    background-color: #360a0a;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #00bcd4;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-list li {
+    background: #1e1e1e;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Projects Section Styles */
+.projects-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.project {
+    background: #1e1e1e;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Contact Section Styles */
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-card {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 200px;
+}
+
+.contact-icon {
+    font-size: 2em;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e1e1e;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .main-nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #1e1e1e;
+        width: 100%;
+    }
+
+    .main-nav.active {
+        display: flex;
+    }
+
+    .nav-link {
+        margin: 10px 0;
+    }
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gaurav - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <home>
+    <header>
+      <div class="header-content">
+        <div class="header-top">
+          <h1 class="name-title">Gaurav</h1>
+          <button class="mobile-menu-btn" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <nav class="main-nav">
+          <a href="#home" onclick="showSection('home'); return false;" class="nav-link active">Home</a>
+          <a href="#about" onclick="showSection('about'); return false;" class="nav-link">About Me</a>
+          <a href="#skills" onclick="showSection('skills'); return false;" class="nav-link">Skills</a>
+          <a href="#projects" onclick="showSection('projects'); return false;" class="nav-link">Projects</a>
+          <a href="#education" onclick="showSection('education'); return false;" class="nav-link">Education</a>
+          <a href="#contact" onclick="showSection('contact'); return false;" class="nav-link">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <section id="home" class="active">
+      <div class="home-content" style="position: relative; z-index: 1;">
+        <div class="profile-image-circle">
+          <img src="gaurav.jpg" alt="Gaurav's profile photo" class="circle-frame"
+            style="border: 3px solid #fff; box-shadow: 0 0 20px rgba(255,255,255,0.3);" />
+        </div>
+        <div class="home-text" style="color: white; text-shadow: 0 1px 3px rgba(0,0,0,0.5);">
+          <center>
+            <h2 class="home-title">Welcome To My Portfolio</h2>
+          </center>
+          <center>
+            <p class="home-description">
+            <h3>Hi, I'm Gaurav, a passionate Data Scientist <br>
+              Email: Gaurav87328@gmail.com | Mobile: 8738927010
+            </h3>
+            </p>
+          </center>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="about-section">
+        <h2>About Me</h2>
+        <p>
+          Data Analyst | Python & Machine Learning Specialist <br /><br />
+          I am a results-driven Data Scientist with a strong foundation in statistical analysis, machine learning, and
+          data visualization. With hands-on experience in Python, SQL, and data modeling, I specialize in transforming raw data
+          into actionable insights that drive business growth and strategic decision-making. I have worked on end-to-end
+          data projects, including data preprocessing, model development, and deployment, and I’m passionate about
+          leveraging data to solve complex real-world problems. My approach blends analytical thinking with a deep
+          curiosity for patterns and trends, ensuring that every solution is both data-backed and business-relevant. I'm always
+          eager to learn, collaborate, and contribute to data-driven innovation.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="skills-section">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+          <li><span class="skill-label">Programming:</span> Python, C/C++, Java</li>
+          <li><span class="skill-label">Data Science:</span> Data Analysis, Data Wrangling, Machine Learning, AI</li>
+          <li><span class="skill-label">Visualization:</span> Power BI, Data Visualization</li>
+          <li><span class="skill-label">Database:</span> MySQL</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="projects-section">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+          <div class="project">
+            <h3>Personal Website</h3>
+            <p>A responsive portfolio website built with HTML, CSS and JavaScript to showcase my skills and projects.</p>
+          </div>
+          <div class="project">
+            <h3>Hotel Reservation</h3>
+            <p><b>Description: </b>
+              The Hotel Reservation System is a Java-based desktop application that allows users to book hotel rooms and
+              manage reservation records using a connected database. Built using Java SE and JDBC, the project demonstrates
+              core concepts of Java programming, database connectivity, and CRUD operations. It is ideal for small-scale
+              hotel operations or as an academic demonstration of JDBC functionality.
+            </p>
+            <p>
+              <b>Repository Link</b> <a href="https://github.com/gaurav834149/Hotel-Reservation.git" target="_blank"
+                class="contact-link">View Repository</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="education-section">
+        <h2>Education</h2>
+        <ul>
+          <li><strong>BACHELOR OF COMPUTER APPLICATIONS</strong> <br> <b>Institution:</b> M.L.K. P.G. College, Balrampur
+            <br>
+            <b>Duration:</b> 2023 - till now 7.4/10
+          </li>
+          <hr>
+          <li><strong>INTERMEDIATE</strong> <br> <b>Institution:</b> S S I C Tetari Bazar, Siddharth Nagar (UP BOARD)<br>
+            <b>Duration:</b> 2022-23 - 64%
+          </li>
+          <hr>
+          <li><strong>HIGH SCHOOL</strong><br><b>Institution:</b> N H S S M T Uska Bazar, Siddharth Nagar (UP BOARD)<br>
+            <b>Duration:</b> 2020-21 - 86.5%
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact-section">
+        <h2>Get In Touch</h2>
+        <p class="section-subtitle" style="color: white">Let's connect and collaborate</p>
+        <div class="contact-container">
+          <div class="contact-methods">
+            <div class="contact-card">
+              <div class="contact-icon">📧</div>
+              <h3>Email Me</h3>
+              <a href="mailto:gaurav87328@gmail.com" class="contact-link">Send Email</a>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon">💼</div>
+              <h3>LinkedIn</h3>
+              <a href="https://www.linkedin.com/in/gaurav-875a3b317/" target="_blank" class="contact-link">View
+                Profile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 Gaurav</p>
+    </footer>
+
+  <script src="script.js">
+  </script>
+      
+  </body>
+</home>
+
+</html>
